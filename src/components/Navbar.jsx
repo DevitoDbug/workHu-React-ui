@@ -14,8 +14,10 @@ function Navbar() {
 
   return (
     <div className="flex items-center justify-between border-b border-gray-400 py-3 px-2">
-      <a href="/">Artlife</a>
-      <nav>
+      <a href="/" className="font-semibold text-gray-800">
+        Artlife
+      </a>
+      <nav className="">
         <section className="lg:hidden">
           <button onClick={handleToggleView}>
             <FontAwesomeIcon
@@ -25,15 +27,16 @@ function Navbar() {
           </button>
 
           <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
-            <div
-              className="bg-red-400 CROSS-ICON absolute top-0 right-0 p-2"
+            <button
+              className="absolute top-0 right-0 p-2"
               onClick={handleToggleView}
             >
               <FontAwesomeIcon
                 icon={faClose}
-                className="text-[150%] text-C_TextBlack"
+                className="text-[150%] text-gray-300"
               />
-            </div>
+            </button>
+
             <NavList />
           </div>
         </section>
