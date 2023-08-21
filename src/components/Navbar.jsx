@@ -13,7 +13,7 @@ function Navbar() {
   };
 
   return (
-    <div className="flex items-center justify-between border-b border-gray-400 py-3 px-2">
+    <div className=" flex items-center justify-between border-b border-gray-400 py-3 px-2">
       <a href="/" className="font-semibold text-gray-800">
         Artlife
       </a>

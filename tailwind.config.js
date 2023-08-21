@@ -9,6 +9,7 @@ export default {
       colors: {
         C_Green: "#03A696",
         C_GreenSlit: "#04c8b4",
+        C_DullWhite: "#fcfcfc",
         C_White: "#FDFDFD",
         C_TextWhite: "#FDFDFE",
         C_TextWhiteDull: "#F2F6F7",

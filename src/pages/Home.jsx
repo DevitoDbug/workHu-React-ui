@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import IntroInfo from "../components/IntroInfo";
 import Services from "../components/Services";
+import Blog from "../components/Blog";
+import Pricing from "../components/Pricing";
 
 const Home = () => {
   return (
@@ -9,6 +11,8 @@ const Home = () => {
       <Navbar />
       <IntroInfo />
       <Services />
+      <Blog />
+      <Pricing />
     </div>
   );
 };
