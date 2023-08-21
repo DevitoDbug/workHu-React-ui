@@ -1,5 +1,5 @@
 import React from "react";
-import image1 from "../../public/webSearch.svg";
+import image1 from "../assets/webSearch.svg";
 
 const Blog = () => {
   return (
