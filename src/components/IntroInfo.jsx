@@ -2,7 +2,7 @@ import React from "react";
 
 const IntroInfo = () => {
   return (
-    <div className="h-2/3 flex flex-col items-center justify-center">
+    <div className="h-2/3 flex flex-col gap-2 items-center justify-center">
       <img
         className="mt-6 w-[70%]"
         src="../../public/undraw_code_thinking_re_gka2.svg"
