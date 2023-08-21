@@ -4,6 +4,7 @@ import IntroInfo from "../components/IntroInfo";
 import Services from "../components/Services";
 import Blog from "../components/Blog";
 import Pricing from "../components/Pricing";
+import Comments from "../components/Comments";
 
 const Home = () => {
   return (
@@ -33,6 +34,8 @@ const Home = () => {
           </p>
         </div>
       </div>
+
+      <Comments />
     </div>
   );
 };
