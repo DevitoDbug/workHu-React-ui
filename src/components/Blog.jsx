@@ -1,5 +1,7 @@
 import React from "react";
 import image1 from "../assets/webSearch.svg";
+import image2 from "../../public/shareOpinion.svg";
+import image3 from "../../public/socialExpert.svg";
 
 const Blog = () => {
   return (
@@ -17,11 +19,7 @@ const Blog = () => {
         </div>
       </div>
       <div className="p-4 flex flex-col justify-center items-center gap-1">
-        <img
-          className="w-1/2"
-          src="/../../public/shareOpinion.svg"
-          alt="research"
-        />
+        <img className="w-1/2" src={image2} alt="research" />
         <div>
           <h1 className="text-xl font-bold">Thousands of similar Topics</h1>
           <div className="h-1 w-[90%] my-1 bg-C_Green rounded-xl"></div>
@@ -34,11 +32,7 @@ const Blog = () => {
       </div>
 
       <div className="p-4 flex flex-col justify-center items-center gap-1">
-        <img
-          className="w-1/2"
-          src="/../../public/socialExpert.svg"
-          alt="research"
-        />
+        <img className="w-1/2" src={image3} alt="research" />
 
         <div>
           <h1 className="text-xl font-bold">
