@@ -45,7 +45,7 @@ const Services = () => {
       <h1 className="text-gray-800 text-xl p-4 font-bold leading-tight">
         What Services, we give
       </h1>
-      <div className="flex flex-wrap gap-3 justify-center items-center p-2">
+      <div className="flex flex-wrap gap-3 justify-center items-center p-3">
         {services.map((service) => (
           <Service service={service} key={service.id} />
         ))}
