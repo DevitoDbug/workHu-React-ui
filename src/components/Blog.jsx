@@ -1,14 +1,11 @@
 import React from "react";
-//flex flex-row-reverse
+import image1 from "../../public/webSearch.svg";
+
 const Blog = () => {
   return (
     <div className="bg- flex flex-col justify-center items-center gap-9">
       <div className="p-4 flex flex-col justify-center items-center gap-1">
-        <img
-          className="w-1/2"
-          src="/../../public/webSearch.svg"
-          alt="research"
-        />
+        <img className="w-1/2" src={image1} alt="research" />
         <div>
           <h1 className="text-xl font-bold">Super fast Research</h1>
           <div className="h-1 w-[90%] my-1 bg-C_Green rounded-xl"></div>
