@@ -5,7 +5,7 @@ const Services = () => {
   const services = [
     {
       id: 1,
-      logoURL: "/../../public/online-payment.png",
+      logoURL: "/../../public/onlinePayment.png",
       description: "Lorem, ipsum dolor sit amet consectetur elit.",
     },
     {
@@ -15,17 +15,17 @@ const Services = () => {
     },
     {
       id: 3,
-      logoURL: "../../public/restaurant.png",
+      logoURL: "/../../public/restaurant.png",
       description: "Lorem, ipsum dolor sit amet consectetur elit.",
     },
     {
       id: 4,
-      logoURL: "/../../public/online-payment.png",
+      logoURL: "/../../public/onlinePayment.png",
       description: "Lorem, ipsum dolor sit amet consectetur elit.",
     },
     {
       id: 5,
-      logoURL: "../../public/home.png",
+      logoURL: "/../../public/home.png",
       description: "Lorem, ipsum dolor sit amet consectetur elit.",
     },
     {

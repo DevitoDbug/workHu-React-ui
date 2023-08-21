@@ -19,7 +19,7 @@ const Home = () => {
       <div className="bg-C_DullWhite my-8 p-4 flex flex-col justify-center items-center gap-1">
         <img
           className="w-1/2"
-          src="../../public/undraw_artificial_intelligence_re_enpp.svg"
+          src="/../../public/artificialIntelligence.svg"
           alt="research"
         />
 

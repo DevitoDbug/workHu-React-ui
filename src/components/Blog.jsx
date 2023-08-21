@@ -6,7 +6,7 @@ const Blog = () => {
       <div className="p-4 flex flex-col justify-center items-center gap-1">
         <img
           className="w-1/2"
-          src="/../../public/undraw_web_search_re_efla.svg"
+          src="/../../public/webSearch.svg"
           alt="research"
         />
         <div>
@@ -22,7 +22,7 @@ const Blog = () => {
       <div className="p-4 flex flex-col justify-center items-center gap-1">
         <img
           className="w-1/2"
-          src="/../../public/undraw_share_opinion_re_4qk7.svg"
+          src="/../../public/shareOpinion.svg"
           alt="research"
         />
         <div>
@@ -39,7 +39,7 @@ const Blog = () => {
       <div className="p-4 flex flex-col justify-center items-center gap-1">
         <img
           className="w-1/2"
-          src="/../../public/undraw_social_expert_re_elbp.svg"
+          src="/../../public/socialExpert.svg"
           alt="research"
         />
 
