@@ -19,9 +19,33 @@ const Comments = () => {
       handle: "@johndoe",
       message: "Lorem ipsum dolor sit amet ",
     },
+    {
+      id: 1,
+      profilePic:
+        "https://tailwindcss.com/_next/static/media/ryan-florence.3af9c9d9.jpg",
+      name: "John Doe",
+      handle: "@johndoe",
+      message: "Lorem ipsum dolor sit amet ",
+    },
+    {
+      id: 1,
+      profilePic:
+        "https://tailwindcss.com/_next/static/media/ryan-florence.3af9c9d9.jpg",
+      name: "John Doe",
+      handle: "@johndoe",
+      message: "Lorem ipsum dolor sit amet ",
+    },
+    {
+      id: 1,
+      profilePic:
+        "https://tailwindcss.com/_next/static/media/ryan-florence.3af9c9d9.jpg",
+      name: "John Doe",
+      handle: "@johndoe",
+      message: "Lorem ipsum dolor sit amet ",
+    },
   ];
   return (
-    <div className="p-2 pt-8 flex flex-col gap-2">
+    <div className="p-2 pt-6 pb-32 flex flex-col gap-2">
       <h1 className="text-gray-800 text-xl p-2 font-bold leading-tight">
         What Out fans are Saying about Us?
       </h1>

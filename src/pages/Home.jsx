@@ -5,6 +5,7 @@ import Services from "../components/Services";
 import Blog from "../components/Blog";
 import Pricing from "../components/Pricing";
 import Comments from "../components/Comments";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -36,6 +37,7 @@ const Home = () => {
       </div>
 
       <Comments />
+      <Footer />
     </div>
   );
 };
