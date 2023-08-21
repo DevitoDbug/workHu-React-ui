@@ -2,16 +2,11 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-C_DullWhite max-w-[1240px] mx-auto py-4 px-2 flex flex-col justify-center items-center text-center text-gray-300">
+    <div className="bg-C_DullWhite max-w-[1240px] mx-auto py-4 px-2 flex flex-col justify-center items-center text-center ">
       <div>
         <h1 className="w-full text-3xl font-bold text-C_Green">REACT.</h1>
-        <p className="py-4">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id odit
-          ullam iste repellat consequatur libero reiciendis, blanditiis
-          accusantium.
-        </p>
 
-        <div className="text-[70%]">
+        <div className="text-[60%]">
           <a
             href="https://www.flaticon.com/free-icons/restaurant"
             title="restaurant icons"
@@ -38,6 +33,12 @@ const Footer = () => {
             title="assistance icons"
           >
             Assistance icons created by Flat Icons - Flaticon
+          </a>
+          <a
+            href="https://www.flaticon.com/free-icons/cleaning"
+            title="cleaning icons"
+          >
+            Cleaning icons created by Smashicons - Flaticon
           </a>
         </div>
       </div>

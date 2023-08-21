@@ -7,6 +7,8 @@ import Pricing from "../components/Pricing";
 import Comments from "../components/Comments";
 import Footer from "../components/Footer";
 
+import image1 from "../../public/artificialIntelligence.svg";
+
 const Home = () => {
   return (
     <div className="h-full w-screen">
@@ -17,11 +19,7 @@ const Home = () => {
       <Pricing />
 
       <div className="bg-C_DullWhite my-8 p-4 flex flex-col justify-center items-center gap-1">
-        <img
-          className="w-1/2"
-          src="../assets/artificialIntelligence.svg"
-          alt="research"
-        />
+        <img className="w-1/2" src={image1} alt="research" />
 
         <div>
           <h1 className="text-xl font-bold">
