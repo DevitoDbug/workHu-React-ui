@@ -24,11 +24,7 @@ const Blog = () => {
       </div>
 
       <div className="p-4 flex flex-col justify-center items-center gap-1 md:flex-row">
-        <img
-          className="w-1/2 lg:w-1/3 justify-start"
-          src={image2}
-          alt="research"
-        />
+        <img className="w-1/2 lg:w-1/3 self-end" src={image2} alt="research" />
         <div className="md:justify-start md:w-1/3">
           <h1 className="text-xl font-bold">Thousands of similar Topics</h1>
           <div className="h-1 w-[90%] my-1 bg-C_Green rounded-xl"></div>
