@@ -5,10 +5,14 @@ import image3 from "../../public/socialExpert.svg";
 
 const Blog = () => {
   return (
-    <div className="bg- flex flex-col justify-center items-center gap-9">
-      <div className="p-4 flex flex-col justify-center items-center gap-1">
-        <img className="w-1/2" src={image1} alt="research" />
-        <div>
+    <div className="bg- flex flex-col justify-center items-center gap-9 md:p-2">
+      <div className="p-4 flex flex-col justify-center items-center gap-1 md:flex-row-reverse md:gap-2">
+        <img
+          className="w-1/2 lg:w-1/3 self-start"
+          src={image1}
+          alt="research"
+        />
+        <div className="md:justify-end md:w-1/3">
           <h1 className="text-xl font-bold">Super fast Research</h1>
           <div className="h-1 w-[90%] my-1 bg-C_Green rounded-xl"></div>
           <p className="text-sm  text-C_TextBlack">
@@ -18,9 +22,14 @@ const Blog = () => {
           </p>
         </div>
       </div>
-      <div className="p-4 flex flex-col justify-center items-center gap-1">
-        <img className="w-1/2" src={image2} alt="research" />
-        <div>
+
+      <div className="p-4 flex flex-col justify-center items-center gap-1 md:flex-row">
+        <img
+          className="w-1/2 lg:w-1/3 justify-start"
+          src={image2}
+          alt="research"
+        />
+        <div className="md:justify-start md:w-1/3">
           <h1 className="text-xl font-bold">Thousands of similar Topics</h1>
           <div className="h-1 w-[90%] my-1 bg-C_Green rounded-xl"></div>
           <p className="text-sm text-C_TextBlack  ">
@@ -31,10 +40,14 @@ const Blog = () => {
         </div>
       </div>
 
-      <div className="p-4 flex flex-col justify-center items-center gap-1">
-        <img className="w-1/2" src={image3} alt="research" />
+      <div className="p-4 flex flex-col justify-center items-center gap-1 md:flex-row-reverse md:gap-2">
+        <img
+          className="w-1/2 lg:w-1/3 self-start"
+          src={image3}
+          alt="research"
+        />
 
-        <div>
+        <div className="md:justify-end md:w-1/3">
           <h1 className="text-xl font-bold">
             Create Content with Proven Popularity
           </h1>
