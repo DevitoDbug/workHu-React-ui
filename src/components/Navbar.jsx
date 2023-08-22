@@ -7,6 +7,8 @@ import NavList from "./NavList";
 
 function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
+  const [prevScrollPos, setPrevScrollPos] = useState(0); // initiate prevScrollPos state with 0
+  const [wasNavVisible, setWasNavVisible] = useState(false); // initiate wasNavVisibel state with false
   const navbarRef = useRef();
 
   const handleToggleView = () => {
@@ -20,11 +22,27 @@ function Navbar() {
       }
     }
 
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+
+      if (prevScrollPos > currentScrollPos) {
+        setIsNavOpen(false);
+      } else {
+        setIsNavOpen(false);
+        if (wasNavVisible) setWasNavVisible(false);
+      }
+
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
     document.addEventListener("click", handleClickOutside);
     return () => {
       document.removeEventListener("click", handleClickOutside);
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [prevScrollPos, wasNavVisible]);
 
   return (
     <div className=" flex items-center justify-between border-b border-gray-400 py-3 px-2">
