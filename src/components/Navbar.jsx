@@ -45,12 +45,14 @@ function Navbar() {
   }, [prevScrollPos, wasNavVisible]);
 
   return (
-    <div className=" flex items-center justify-between border-b border-gray-400 py-3 px-2">
-      <a href="/" className="font-semibold text-gray-800">
-        Artlife
+    <div className=" flex items-center justify-between border-b border-gray-400 py-3 px-2 md:border-none">
+      <a href="/" className="px-2 font-semibold text-gray-800 md:font-bold">
+        Klipay
+        <div className="h-1 w-[85%] my-[0.1rem] bg-C_Green rounded-xl animate-pulse"></div>
       </a>
+
       <nav className="">
-        <section className="lg:hidden" ref={navbarRef}>
+        <section className="md:hidden" ref={navbarRef}>
           <button onClick={handleToggleView}>
             <FontAwesomeIcon
               icon={faBars}
@@ -75,7 +77,7 @@ function Navbar() {
         </section>
 
         {/*Nav in desktop view */}
-        <div className="hidden lg:block">
+        <div className="hidden md:block">
           <NavList />
         </div>
       </nav>
