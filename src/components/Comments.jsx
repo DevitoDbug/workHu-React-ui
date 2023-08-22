@@ -46,7 +46,7 @@ const Comments = () => {
   ];
   return (
     <div className="p-2 pt-6 pb-32 flex flex-col gap-2">
-      <h1 className="text-gray-800 text-xl p-2 font-bold leading-tight">
+      <h1 className="text-gray-800 text-xl text-center p-2 font-bold leading-tight">
         What Out fans are Saying about Us?
       </h1>
       <p className="p-2 text-C_TextBlack text-sm">

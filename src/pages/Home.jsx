@@ -18,10 +18,14 @@ const Home = () => {
       <Blog />
       <Pricing />
 
-      <div className="bg-C_DullWhite my-8 p-4 flex flex-col justify-center items-center gap-1">
-        <img className="w-1/2" src={image1} alt="research" />
+      <div className="bg-C_DullWhite my-8 p-4 flex flex-col justify-center items-center gap-1 md:flex-row">
+        <img
+          className="w-1/2 lg:w-1/3 self-start"
+          src={image1}
+          alt="research"
+        />
 
-        <div>
+        <div className="md:justify-end md:w-1/3">
           <h1 className="text-xl font-bold">
             Next generation home intelligence is here
           </h1>
