@@ -2,15 +2,29 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import NavList from "./NavList";
 
 function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
+  const navbarRef = useRef();
 
   const handleToggleView = () => {
     setIsNavOpen((prev) => !prev); // toggle the state value
   };
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        setIsNavOpen(false);
+      }
+    }
+
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
 
   return (
     <div className=" flex items-center justify-between border-b border-gray-400 py-3 px-2">
@@ -18,7 +32,7 @@ function Navbar() {
         Artlife
       </a>
       <nav className="">
-        <section className="lg:hidden">
+        <section className="lg:hidden" ref={navbarRef}>
           <button onClick={handleToggleView}>
             <FontAwesomeIcon
               icon={faBars}
@@ -26,6 +40,7 @@ function Navbar() {
             />
           </button>
 
+          {/*Nav in mobile view */}
           <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
             <button
               className="absolute top-0 right-0 p-2"
@@ -40,6 +55,8 @@ function Navbar() {
             <NavList />
           </div>
         </section>
+
+        {/*Nav in desktop view */}
         <div className="hidden lg:block">
           <NavList />
         </div>
