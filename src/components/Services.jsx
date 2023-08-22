@@ -10,32 +10,38 @@ const Services = () => {
   const services = [
     {
       id: 1,
+      name: "Easy Booking",
       logoURL: image1,
       description: "Lorem, ipsum dolor sit amet consectetur elit.",
     },
     {
       id: 2,
+      name: "Swimming Pool",
       logoURL: image2,
       description: "Lorem, ipsum dolor sit amet consectetur elit.",
     },
     {
       id: 3,
+      name: "Restaurant Home",
       logoURL: image3,
       description: "Lorem, ipsum dolor sit amet consectetur elit.",
     },
     {
       id: 4,
+      name: "Mobile Payment",
       logoURL: image1,
       description: "Lorem, ipsum dolor sit amet consectetur elit.",
     },
     {
       id: 5,
       logoURL: image4,
+      name: "Bank Card Services",
       description: "Lorem, ipsum dolor sit amet consectetur elit.",
     },
     {
       id: 6,
       logoURL: image5,
+      name: "Best Home",
       description: "Lorem, ipsum dolor sit amet consectetur elit.",
     },
   ];
