@@ -36,7 +36,7 @@ const Blog = () => {
 
         <div>
           <h1 className="text-xl font-bold">
-            Next generation home intelligence is here
+            Create Content with Proven Popularity
           </h1>
           <div className="h-1 w-[90%] my-1 bg-C_Green rounded-xl"></div>
           <p className="text-sm text-C_TextBlack  ">
