@@ -49,7 +49,7 @@ const Comments = () => {
       <h1 className="text-gray-800 text-xl text-center p-2 font-bold leading-tight">
         What Out fans are Saying about Us?
       </h1>
-      <p className="p-2 text-C_TextBlack text-sm">
+      <p className="p-2 text-C_TextBlack text-sm text-center self-center md:w-[40%]">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.Dolores
         voluptatibus aspernatur consequuntur aut blanditiis solu
       </p>

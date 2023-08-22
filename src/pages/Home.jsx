@@ -18,7 +18,7 @@ const Home = () => {
       <Blog />
       <Pricing />
 
-      <div className="bg-C_DullWhite my-8 p-4 flex flex-col justify-center items-center gap-1 md:flex-row">
+      <div className="bg-C_DullWhite py-8 p-4 flex flex-col justify-center items-center gap-1 md:flex-row">
         <img
           className="w-1/2 lg:w-1/3 self-start"
           src={image1}
